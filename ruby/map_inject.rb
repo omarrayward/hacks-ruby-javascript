@@ -12,7 +12,7 @@ class Array
     new_array
   end
 
-  def inject(memo= self[0])
+  def inject(memo= 0)
     self.each do |element|
       memo = yield(memo, element)
     end
@@ -31,4 +31,4 @@ end
 
 p [1,2,3].map!{|e| e*2}
 p [1,2,3].map2!{|e| e*2}
-p [1,2,3].inject{|memo, e| memo += e}
+p [1,2,3].inject{|memo, e| memo+e}
