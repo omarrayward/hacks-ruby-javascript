@@ -10,6 +10,7 @@ in the command line
 
 #### 2. javascript : Has basic challenges solved with javascript
 
+
 To run any file type:
 ` node <name of file> `
 in the command line (node.js needs to be installed)
