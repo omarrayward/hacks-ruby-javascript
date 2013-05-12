@@ -2,11 +2,8 @@
 # http://www.youtube.com/watch?v=XcuBvj0pw-E&noredirect=1
 
 # As you can see, the Game of Life is a simple discrete simulation on a regular grid. It is governed by two rules:
-
 # An empty square "comes to life" if it is adjacent to exactly three live squares
-
 # A live square "dies" if it has less than two live neighbors, or more than three live neighbors
-
 # However, in our version of the problem, the grid is finite, and the cells "wrap around". That means that on an n-by-n grid, the nth cell is always neighbors with the first cell. In the following example, the characters in bold would all be neighbors of x:
 
 # h 0 f g
@@ -33,6 +30,7 @@
 # 0 0 0
 # 0 0 0
 # You may implement your solution in the language of your choosing. We welcome more interesting visualizations and UX, but do include a basic version that reads from stdin and writes to stdout.
+
 
 # I took a pseudofunctional approach to solve it, even though there are limitations to do
 # functional programming in ruby
@@ -94,6 +92,7 @@ def display(next_board)
 end
 
 # driver code
+# Input in the command lind should be something like `ruby game_of_life.rb "14\n3 3\n1 1 1\n1 1 1\n1 1 1" `
 
 input = ARGV
 game_of_life(input[0])
