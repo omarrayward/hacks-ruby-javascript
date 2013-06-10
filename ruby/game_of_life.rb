@@ -43,7 +43,7 @@ def game_of_life(input)
   cols        = input[1].split[0].to_i
   input.shift
   input.shift
-  board       = input.map{|e| e.split(' ').map{|i| i.to_i}}
+  board       = input.map{|e| e.split(' ').map{|i| i.to_i}} # the board is a 2D array
   # until this point we are preparing the data to be passed to the different methods
 
   iterations.times do
